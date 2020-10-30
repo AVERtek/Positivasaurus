@@ -33,6 +33,15 @@
 <model-viewer id="reveal" loading="eager" camera-controls autoplay animation-name="Tail_whip" src="Models/scene.gltf" ar="" ar-modes="scene-viewer webxr quick-look" ios-src="Positivasaurus.usdz" alt="Chris Dyers Positivasaurus" auto-rotate="" auto-rotate-delay="0" ar-scale="auto" style="width: 95%; height: 500px" exposure="0.5"> 
 </model-viewer>
 
+(() => {
+  const modelViewer = document.querySelector('#paused-change-demo');
+
+  self.setInterval(() => {
+    modelViewer.animationName = modelViewer.animationName === 'Roar' ?
+      'Bite' : 'Tail_whip';
+  }, 1500.0);
+})();
+
 <!-- Loads <model-viewer> for modern browsers: -->
  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
   </script>
