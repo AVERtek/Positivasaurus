@@ -30,7 +30,7 @@
   <!-- OPTIONAL: Include prismatic.js for Magic Leap support -->
   <!--<script src="https://unpkg.com/@magicleap/prismatic/prismatic.min.js"></script>-->
 
-<model-viewer id="reveal" id="paused-change-demo" loading="eager" camera-controls autoplay animation-name="Idle" src="Models/scene.gltf" ar="" ar-modes="scene-viewer webxr quick-look" ios-src="Positivasaurus.usdz" alt="Chris Dyer's Positivasaurus" auto-rotate="" auto-rotate-delay="0" ar-scale="auto" style="width: 95%; height: 500px" exposure="0.5"> 
+<model-viewer id="reveal" id="paused-change-demo" loading="eager" camera-controls autoplay animation-name="Roar" src="Models/scene.gltf" ar="" ar-modes="scene-viewer webxr quick-look" ios-src="Positivasaurus.usdz" alt="Chris Dyer's Positivasaurus" auto-rotate="" auto-rotate-delay="0" ar-scale="auto" style="width: 95%; height: 500px" exposure="0.5"> 
 </model-viewer>
 <script>
 (() => {
@@ -38,8 +38,8 @@
 
   self.setInterval(() => {
     modelViewer.animationName = modelViewer.animationName === 'Idle' ?
-      'Roar' ? 'Bite' ? 'Tail_whip' : 'Idle';
-  }, 1500.0);
+      'Roar' ? 'Bite' ? 'Tail_whip' : 'Roar';
+  }, 300.0);
 })();
 </script>
 
