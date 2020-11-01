@@ -34,12 +34,12 @@
 </model-viewer>
 <script>
 (() => {
-  const modelViewer = document.querySelector('#paused-change-demo');
+  const modelViewer = document.querySelector("#paused-change-demo");
 
   self.setInterval(() => {
     modelViewer.animationName = modelViewer.animationName === "Idle" ?
       "Roar" ? "Bite" ? "Tail_whip" ? "Idle";
-  }, 50.00
+  }, 150.00
 })();
 </script>
 
