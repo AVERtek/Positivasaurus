@@ -38,7 +38,7 @@
 
   self.setInterval(() => {
     modelViewer.animationName = modelViewer.animationName === "Idle" ?
-      "Roar" : "Bite" : "Tail_whip" : "Idle";
+      "Tail_whip" : "Idle";
   }, 1500.00
 })();
 </script>
