@@ -30,7 +30,7 @@
   <!-- OPTIONAL: Include prismatic.js for Magic Leap support -->
   <!--<script src="https://unpkg.com/@magicleap/prismatic/prismatic.min.js"></script>-->
 
-<model-viewer loading="eager" id="paused-change-demo" camera-controls autoplay animation-name="Idle" src="Models/scene.gltf" ar="" ar-modes="scene-viewer webxr quick-look" ios-src="Positivasaurus.usdz" alt="Chris Dyer's Positivasaurus" auto-rotate="" auto-rotate-delay="0" ar-scale="auto" style="width: 95%; height: 500px" exposure="0.5">  <button slot="ar-button" style="background-color: white; border-radius: 4px; border: none; position: absolute; top: 16px; right: 16px; ">
+<model-viewer loading="eager" id="paused-change-demo" camera-controls autoplay animation-name="Idle" src="Models/scene.gltf" ar="" ar-modes="scene-viewer webxr quick-look" ios-src="Positivasaurus.usdz" alt="Chris Dyer's Positivasaurus" auto-rotate="" auto-rotate-delay="0" ar-scale="auto" style="width: 95%; height: 500px" exposure="0.5">  <button slot="ar-button" style="background-color: white; border-radius: 8px; border: none; position: absolute; top: 20px; right: 20px; ">
       👋 Activate AR
   </button>
 </model-viewer>
