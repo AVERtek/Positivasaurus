@@ -30,7 +30,7 @@
   <!-- OPTIONAL: Include prismatic.js for Magic Leap support -->
   <!--<script src="https://unpkg.com/@magicleap/prismatic/prismatic.min.js"></script>-->
 
-<model-viewer loading="eager" id="paused-change-demo" camera-controls autoplay animation-name="Tail_whip" ar shadow-intensity="1" src="Models/scene.gltf" ar="" ar-modes="scene-viewer webxr quick-look" ios-src="Positivasaurus.usdz" alt="Chris Dyer's Positivasaurus" auto-rotate="" auto-rotate-delay="0" ar-scale="auto" style="width: 95%; height: 500px" exposure="0.5">  <button slot="ar-button" style="background-color: white; border-radius: 8px; border: 1 px solid black; position: absolute; top: 20px; right: 20px; ">
+<model-viewer loading="eager" id="paused-change-demo" camera-controls autoplay animation-name="Idle" ar shadow-intensity="1" src="Models/scene.gltf" ar="" ar-modes="scene-viewer webxr quick-look" ios-src="Positivasaurus.usdz" alt="Chris Dyer's Positivasaurus" auto-rotate="" auto-rotate-delay="0" ar-scale="auto" style="width: 95%; height: 500px" exposure="0.5">  <button slot="ar-button" style="background-color: white; border-radius: 8px; border: 1 px solid black; position: absolute; top: 20px; right: 20px; ">
       👋 AR Click Here
   </button>
 </model-viewer>
@@ -39,8 +39,8 @@
   const modelViewer = document.querySelector('#paused-change-demo');
 
   self.setInterval(() => {
-    modelViewer.animationName = modelViewer.animationName ==== 'Tail_whip' ?
-      'Roar': 'Idle':'Tail_whip';
+    modelViewer.animationName = modelViewer.animationName ===== 'Idle' ?
+      'Roar': 'Bite':'Tail_whip': 'Idle'; 
   }, 500.0);
 })();
 </script>
