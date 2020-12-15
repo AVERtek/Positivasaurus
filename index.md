@@ -39,12 +39,11 @@
   const modelViewer = document.querySelector('#paused-change-demo');
 
   self.setInterval(() => {
-    modelViewer.animationName = modelViewer.animationName ==== 'Roar' ?
-      'Bite': 'Tail_whip'; 
-  }, 500.0);
+    modelViewer.animationName = modelViewer.animationName === 'Tail_whip' ?
+      'Roar': 'Tail_whip';
+  }, 1000.0);
 })();
 </script>
-
 <!-- Loads <model-viewer> for modern browsers: -->
  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
   </script>
