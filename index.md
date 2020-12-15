@@ -39,7 +39,7 @@
   const modelViewer = document.querySelector('#paused-change-demo');
 
   self.setInterval(() => {
-    modelViewer.animationName = modelViewer.animationName ===== 'Roar' ?
+    modelViewer.animationName = modelViewer.animationName === 'Roar' ?
       'Bite': 'Tail_whip': 'Roar'; 
   }, 500.0);
 })();
